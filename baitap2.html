@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>20 số nguyên tố</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td></td>
+    </tr>
+</table>
+</body>
+<script>
+    let soLanInSNT = +prompt('Nhập so lan muon in: ')
+    let count = 0;
+    for (let snt = 2; count < soLanInSNT; snt++) {
+        let checkSNT = true;
+        for (let i = 2; i < snt; i++) {
+            if(snt%i==0){
+                checkSNT  = false;
+                break;
+            }
+    }
+   if(checkSNT){
+       count ++;
+       document.write(snt + " ")
+   }
+    }
+</script>
+</script>
+</html>
