@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tính tổng 20 số đầu trong dãy fibonacci</title>
+</head>
+<body>
+<script>
+    let nhapVao = +prompt(' Nhập số lần số muốn tính tổng là: ');
+    let n1 = 0;
+    let n2 = 1;
+    for (let i = 0; i < nhapVao; i++) {
+        let sum = n1 + n2;
+        n1 = n2;
+        n2 = sum;
+        let tong = sum + n1;
+        document.write('Tổng các số trong dãy là: ' + tong + '<br>')
+
+    }
+</script>
+</body>
+</html>

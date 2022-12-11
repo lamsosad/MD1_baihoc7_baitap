@@ -17,15 +17,15 @@
     for (let snt = 2; count < soLanInSNT; snt++) {
         let checkSNT = true;
         for (let i = 2; i < snt; i++) {
-            if(snt%i==0){
-                checkSNT  = false;
+            if (snt % i == 0) {
+                checkSNT = false;
                 break;
             }
-    }
-   if(checkSNT){
-       count ++;
-       document.write(snt + " ")
-   }
+        }
+        if (checkSNT) {
+            count++;
+            document.write(snt + " <br> ")
+        }
     }
 </script>
 </script>
