@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chia hết cho 3 và 5</title>
+</head>
+<body>
+<script>
+    let chiaHet = +prompt('Nhập số các số chia hết: ');
+    for (let i = 0; i < chiaHet; i++) {
+        if (i % 3 == 0 && i % 5 == 0) {
+            document.write(i + '=' + 'FIZZ BUZZ' + '<br>');
+        } else if (i % 5 == 0) {
+                document.write(i + '=' + 'BUZZ' + '<br>');
+            } else if (i % 3 == 0) {
+                    document.write(i + '=' + 'FIZZ' + '<br>');
+                } else {
+            document.write( i +'<br>')
+        }
+    }
+
+
+</script>
+</body>
+</html>

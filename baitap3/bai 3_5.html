@@ -9,14 +9,13 @@
     let nhapVao = +prompt(' Nhập số lần số muốn tính tổng là: ');
     let n1 = 0;
     let n2 = 1;
+    let tong = 0;
     for (let i = 0; i < nhapVao; i++) {
         let sum = n1 + n2;
         n1 = n2;
         n2 = sum;
-        let tong = sum + n1;
-        document.write('Tổng các số trong dãy là: ' + tong + '<br>')
-
-    }
+        tong = sum + n1;
+    } document.write('Tổng các số trong dãy là: ' + tong + '<br>')
 </script>
 </body>
 </html>

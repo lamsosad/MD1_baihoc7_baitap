@@ -10,11 +10,12 @@
     let nhapDay = +prompt('Nhập số lần muốn in ra số trong dãy Fibonacci: ');
     let n1 = 0;
     let n2 = 1;
-    for (let i = 1; i < nhapDay; i++) {
-        let sum = n1 + n2;
+    let sum = 0;
+    for (let i = 0; i < nhapDay; i++) {
+        sum = n1 + n2;
         n1 = n2;
         n2 = sum;
-        document.write(sum + '<br>')
+        document.write(sum + ', ')
     }
 </script>
 </html>
